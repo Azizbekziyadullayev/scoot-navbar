@@ -1,0 +1,125 @@
+.main {
+  .delivery-part {
+    margin-top: 160px;
+
+    .container {
+      .delivery-part-card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+
+        .delivery-cards {
+          width: 350px;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+
+          .delivery-cards-header {
+            font-family: "Space Mono";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: -1.07143px;
+            color: #495567;
+            margin-top: 40px;
+          }
+
+          .delivey-card-text {
+            font-family: "Lexend Deca";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            color: #939caa;
+            margin-top: 27px;
+          }
+        }
+      }
+    }
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 40px;
+    margin-top: 200px;
+
+    .inboxes {
+        width: 100%;
+        margin-top: 50px;
+
+        .inboxes-header {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            letter-spacing: -2.14286px;
+            color: #495567;
+        }
+
+        .inboxes-text {
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            color: #939CAA;
+            margin-top: 24px;
+            margin-bottom: 40px;
+            width: 445px;
+        }
+
+        .inboxes-btn {
+                font-family: 'Space Mono';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                text-align: center;
+                color: #FFFFFF;
+                background: #FCB72B;
+                padding: 14px 39px;  
+                border: 2px solid #FCB72B;    
+                transition: 0.5s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    border: 2px solid #FCB72B;
+                    color: #FCB72B;
+                    background: #f2f2f2;
+                }
+        }
+
+        
+        .inboxes-img {
+            width: 445px;
+            height: 445px;
+            border-radius: 50%;
+            object-fit: contain;
+        }
+
+        .middle-img {
+            margin-left: 0;
+        }
+        
+
+    }
+  }
+}
+
+
+@media (max-width: 769px) {
+
+  .delivery-part {
+
+    .container {
+      .delivery-part-card-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+  }
+
+
+  .box-container {
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+}
